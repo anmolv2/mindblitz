@@ -400,31 +400,35 @@
 
     <!-- Application Script -->
     <script>
-        // Vocabulary Bank for Words Blitz
+        // Vocabulary Bank for Words Blitz (Enhanced with Merriam-Webster / GRE / SAT Level Words)
         const WORDS_DATABASE = [
-            // Level 1: Basic
-            { word: "Happy", type: "synonym", answer: "Joyful", distractors: ["Sad", "Angry", "Tired"], level: 1 },
-            { word: "Hot", type: "opposite", answer: "Cold", distractors: ["Warm", "Bright", "Fast"], level: 1 },
-            { word: "Big", type: "synonym", answer: "Large", distractors: ["Tiny", "Weak", "Slow"], level: 1 },
-            { word: "Fast", type: "opposite", answer: "Slow", distractors: ["Quick", "Hard", "Tall"], level: 1 },
-            { word: "Smart", type: "synonym", answer: "Clever", distractors: ["Dull", "Heavy", "Quiet"], level: 1 },
-            { word: "Dark", type: "opposite", answer: "Light", distractors: ["Deep", "Black", "Cold"], level: 1 },
+            // Level 1: Intermediate
+            { word: "Candid", type: "synonym", answer: "Frank", distractors: ["Deceitful", "Guarded", "Evasive"], level: 1 },
+            { word: "Ancient", type: "opposite", answer: "Modern", distractors: ["Archaic", "Venerable", "Historic"], level: 1 },
+            { word: "Fragile", type: "synonym", answer: "Delicate", distractors: ["Robust", "Sturdy", "Resilient"], level: 1 },
+            { word: "Obscure", type: "opposite", answer: "Clear", distractors: ["Vague", "Cryptic", "Opaque"], level: 1 },
+            { word: "Brave", type: "synonym", answer: "Valiant", distractors: ["Craven", "Timorous", "Pusillanimous"], level: 1 },
+            { word: "Abundant", type: "opposite", answer: "Scarce", distractors: ["Copious", "Profuse", "Bountiful"], level: 1 },
 
-            // Level 2: Intermediate
-            { word: "Brave", type: "synonym", answer: "Courageous", distractors: ["Fearful", "Timid", "Gentle"], level: 2 },
-            { word: "Ancient", type: "opposite", answer: "Modern", distractors: ["Old", "Historic", "Aged"], level: 2 },
-            { word: "Calm", type: "synonym", answer: "Peaceful", distractors: ["Stormy", "Wild", "Loud"], level: 2 },
-            { word: "Praise", type: "opposite", answer: "Criticize", distractors: ["Applaud", "Honor", "Cheer"], level: 2 },
-            { word: "Fragile", type: "synonym", answer: "Delicate", distractors: ["Strong", "Tough", "Solid"], level: 2 },
-            { word: "Victory", type: "opposite", answer: "Defeat", distractors: ["Win", "Success", "Triumph"], level: 2 },
+            // Level 2: Advanced (SAT / College Level)
+            { word: "Ephemeral", type: "synonym", answer: "Transient", distractors: ["Enduring", "Perpetual", "Eternal"], level: 2 },
+            { word: "Audacious", type: "opposite", answer: "Timid", distractors: ["Intrepid", "Bold", "Rash"], level: 2 },
+            { word: "Meticulous", type: "synonym", answer: "Scrupulous", distractors: ["Careless", "Cursory", "Sloppy"], level: 2 },
+            { word: "Equanimity", type: "opposite", answer: "Agitation", distractors: ["Serenity", "Composure", "Tranquility"], level: 2 },
+            { word: "Fastidious", type: "synonym", answer: "Picky", distractors: ["Indifferent", "Lax", "Unfussy"], level: 2 },
+            { word: "Pragmatic", type: "opposite", answer: "Idealistic", distractors: ["Practical", "Realistic", "Utilitarian"], level: 2 },
+            { word: "Laconic", type: "synonym", answer: "Concise", distractors: ["Verbose", "Garrulous", "Loquacious"], level: 2 },
+            { word: "Benevolent", type: "opposite", answer: "Malevolent", distractors: ["Altruistic", "Charitable", "Magnanimous"], level: 2 },
 
-            // Level 3: Advanced
-            { word: "Abundant", type: "synonym", answer: "Plentiful", distractors: ["Scarce", "Meager", "Empty"], level: 3 },
-            { word: "Obscure", type: "opposite", answer: "Clear", distractors: ["Hidden", "Vague", "Dim"], level: 3 },
-            { word: "Candid", type: "synonym", answer: "Honest", distractors: ["Deceitful", "Shy", "Secret"], level: 3 },
-            { word: "Rigid", type: "opposite", answer: "Flexible", distractors: ["Stiff", "Hard", "Firm"], level: 3 },
-            { word: "Meticulous", type: "synonym", answer: "Careful", distractors: ["Careless", "Hasty", "Rushed"], level: 3 },
-            { word: "Timid", type: "opposite", answer: "Bold", distractors: ["Shy", "Quiet", "Weak"], level: 3 }
+            // Level 3: Expert / GRE / Webster's High Difficulty
+            { word: "Sycophant", type: "synonym", answer: "Flatterer", distractors: ["Detractor", "Rebel", "Critic"], level: 3 },
+            { word: "Perfidious", type: "opposite", answer: "Faithful", distractors: ["Treacherous", "Deceitful", "Disloyal"], level: 3 },
+            { word: "Pugnacious", type: "synonym", answer: "Belligerent", distractors: ["Peaceable", "Placating", "Conciliatory"], level: 3 },
+            { word: "Esoteric", type: "opposite", answer: "Common", distractors: ["Abstruse", "Arcane", "Recondite"], level: 3 },
+            { word: "Magnanimous", type: "synonym", answer: "Generous", distractors: ["Parsimonious", "Petty", "Miserly"], level: 3 },
+            { word: "Ignominious", type: "opposite", answer: "Glorious", distractors: ["Disgraceful", "Shameful", "Humillating"], level: 3 },
+            { word: "Nefarious", type: "synonym", answer: "Wicked", distractors: ["Virtuous", "Pious", "Exemplary"], level: 3 },
+            { word: "Loquacious", type: "opposite", answer: "Taciturn", distractors: ["Voluble", "Talkative", "Fluent"], level: 3 }
         ];
 
         class MindBlitzGame {
